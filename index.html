@@ -15,7 +15,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>WPPOOL</title>
+
 </head>
 
 <body class="m-5 bg-slate-300">
@@ -86,8 +90,12 @@
         <section class="bg-white p-5 rounded-lg">
             <div class="flex justify-between items-center mb-5">
                 <h2 class="text-4xl">All Companies</h2>
-                <input class="pl-2 pr-5 py-2 w-96 bg-slate-300  rounded-lg text-black" type="search"
-                    placeholder="Search Companies" name="" id="">
+                <div class=" bg-slate-300 pl-4  rounded-lg text-black">
+                    <i class="fa fa-search" style="font-size:16px;color:rgb(125, 125, 156)"></i>
+                    <input class="w-96 pl-2 pr-5 py-2 bg-slate-300 outline-none" type="search"
+                        placeholder="Search Companies" name="" id="">
+                </div>
+
             </div>
             <!-- table data -->
             <div class="overflow-x-auto">
@@ -95,7 +103,7 @@
                     <thead>
                         <tr>
 
-                            <th>Company</th>
+                            <th class="font-bold">Company</th>
                             <th>Ticker</th>
                             <th>Vertical</th>
                             <th>Price</th>
@@ -273,6 +281,60 @@
                     <img src="images/Group236.png" alt="">
                 </div>
             </div>
+        </section>
+
+        <!-- section 4 slider part -->
+        <!-- Slideshow container -->
+        <section>
+            <div class="space-y-3 ml-10">
+                <h1 class="text-2xl">State of USA</h1>
+                <select class="bg-blue-900 text-white py-2 px-5 rounded-3xl text-2xl font-semibold" id="year"
+                    name="year">
+                    <option value="2015">2019</option>
+                    <option value="2016">2020</option>
+                    <option value="2017">2021</option>
+                    <option value="2018">2022</option>
+                    <option value="2019">2023</option>
+                    <option value="2020">2024</option>
+                </select>
+                <p>Click through the slides or download the report to view natively on your device.</p>
+            </div>
+            <div class="swiper mySwiper mt-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/slide1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide1.png" />
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
         </section>
 
         <!-- section 5 stories & ideas -->
@@ -453,7 +515,7 @@
     <!-- main part end -->
 
     <!-- footer part start -->
-    <footer class="bg-slate-400 my-9 px-5 py-10 rounded-lg">
+    <footer class="bg-slate-200 my-9 px-5 py-10 rounded-lg">
         <div class="flex justify-around">
             <!-- part 1 -->
             <div class="flex flex-col justify-between">
@@ -464,7 +526,7 @@
                         and human-centered designs.</h3>
                 </div>
                 <div>
-                    <div class="flex gap-5 text-slate-300 mb-3">
+                    <div class="flex gap-5 text-slate-500 mb-3">
                         <p>©2024</p>
                         <a href="">Terms of Use</a>
                         <a href="">Privacy Policy</a>
@@ -500,30 +562,35 @@
                         North Magdaleneview, <br>
                         UT 97952-2814</p>
                 </div>
-                <hr>
+                <div class="divider"></div>
                 <div>
                     <p class="font-bold">London</p>
                     <p class="text-black">Suite 292 903 Stehr Streets, <br>
                         Langworthtown, SC 94577-9465</p>
                 </div>
 
-                <hr>
+                <div class="divider"></div>
                 <div>
                     <p class="font-bold">San Francisco</p>
                     <p class="text-black">19837 Gilberto Lodge, <br>
                         Lake Kendallville, <br>
                         Colorado - 97392, Bhutan</p>
                 </div>
-                <hr>
+                <div class="divider"></div>
                 <div class="flex gap-10">
                     <i class="fa fa-linkedin-square" style="font-size:36px;color:rgb(121, 121, 158)"></i>
                     <i class="fa fa-twitter" style="font-size:36px;color:rgb(125, 125, 156)"></i>
+
                 </div>
             </div>
         </div>
 
     </footer>
     <!-- footer part end -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"> </script>
+    <!-- js file -->
+    <script src="script.js"></script>
 
 </body>
 
