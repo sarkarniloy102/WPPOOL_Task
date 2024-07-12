@@ -1,3 +1,9 @@
+document.getElementById('menuIcon').addEventListener('click', function() {
+  var menuContent = document.getElementById('menuContent');
+  menuContent.classList.toggle('hidden');
+});
+
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   centeredSlides: false,
